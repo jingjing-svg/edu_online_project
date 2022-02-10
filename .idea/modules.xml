@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/base-service/base-service.iml" filepath="$PROJECT_DIR$/common/base-service/base-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-util/common-util.iml" filepath="$PROJECT_DIR$/common/common-util/common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/edu-service/edu-service.iml" filepath="$PROJECT_DIR$/service/edu-service/edu-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jingjing_parent.iml" filepath="$PROJECT_DIR$/jingjing_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/oss-service/oss-service.iml" filepath="$PROJECT_DIR$/service/oss-service/oss-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/vod-service.iml" filepath="$PROJECT_DIR$/service/vod-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/vod_service/vod_service.iml" filepath="$PROJECT_DIR$/service/vod_service/vod_service.iml" />
+    </modules>
+  </component>
+</project>
