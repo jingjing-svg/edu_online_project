@@ -1,10 +1,12 @@
 package com.isjingjing.utils.util;
 
-import ch.qos.logback.classic.BasicConfigurator;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.config.RequestConfig;
-import org.apache.http.client.methods.*;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpDelete;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
@@ -28,43 +30,43 @@ public class HttpUtils {
      */
     public static String doGet(String url, String token) {
 
-        CloseableHttpClient httpClient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet(url);
-        httpGet.setHeader("Content-type", "application/json");
-        httpGet.setHeader("DataEncoding", "UTF-8");
-        httpGet.setHeader("token", token);
-        RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(35000).setConnectionRequestTimeout(35000).setSocketTimeout(60000).build();
-        httpGet.setConfig(requestConfig);
-
-        CloseableHttpResponse httpResponse = null;
-        try {
-            httpResponse = httpClient.execute(httpGet);
-            HttpEntity entity = httpResponse.getEntity();
-            String result = EntityUtils.toString(entity);
-            return result;
-        } catch (ClientProtocolException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } finally {
-            if (httpResponse != null) {
-                try {
-                    httpResponse.close();
-                } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            }
-            if (null != httpClient) {
-                try {
-                    httpClient.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+//        CloseableHttpClient httpClient = HttpClients.createDefault();
+//        HttpGet httpGet = new HttpGet(url);
+//        httpGet.setHeader("Content-type", "application/json");
+//        httpGet.setHeader("DataEncoding", "UTF-8");
+//        httpGet.setHeader("token", token);
+//        RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(35000).setConnectionRequestTimeout(35000).setSocketTimeout(60000).build();
+//        httpGet.setConfig(requestConfig);
+//
+//        CloseableHttpResponse httpResponse = null;
+//        try {
+//            httpResponse = httpClient.execute(httpGet);
+//            HttpEntity entity = httpResponse.getEntity();
+//            String result = EntityUtils.toString(entity);
+//            return result;
+//        } catch (ClientProtocolException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        } finally {
+//            if (httpResponse != null) {
+//                try {
+//                    httpResponse.close();
+//                } catch (IOException e) {
+//                    // TODO Auto-generated catch block
+//                    e.printStackTrace();
+//                }
+//            }
+//            if (null != httpClient) {
+//                try {
+//                    httpClient.close();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }
         return null;
     }
 

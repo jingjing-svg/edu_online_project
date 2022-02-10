@@ -1,21 +1,18 @@
 package com.isjingjing.eduservice.service.impl;
 
-import ch.qos.logback.core.joran.util.beans.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.isjingjing.eduservice.entity.EduChapter;
 import com.isjingjing.eduservice.entity.EduCourse;
 import com.isjingjing.eduservice.entity.EduCourseDescription;
-import com.isjingjing.eduservice.entity.EduVideo;
-import com.isjingjing.eduservice.entity.vo.ChapterVo;
 import com.isjingjing.eduservice.entity.vo.CourseQuery;
 import com.isjingjing.eduservice.entity.vo.CourseVo;
 import com.isjingjing.eduservice.mapper.EduCourseMapper;
 import com.isjingjing.eduservice.service.EduChapterService;
 import com.isjingjing.eduservice.service.EduCourseDescriptionService;
 import com.isjingjing.eduservice.service.EduCourseService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.isjingjing.eduservice.service.EduVideoService;
 import com.isjingjing.utils.exception.defineexception.CustomException;
 import org.springframework.beans.BeanUtils;
@@ -23,15 +20,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import java.util.Date;
-import java.util.List;
-
 /**
  * <p>
  * 课程 服务实现类
  * </p>
  *
- * @author atguigu
+ * @author jingjing
  * @since 2021-12-19
  */
 @Service
